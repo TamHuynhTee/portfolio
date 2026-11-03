@@ -14,3 +14,4 @@ todos.json
 
 # contains personal contact details; add manually before deploy
 public/resume.pdf
+.vercel
