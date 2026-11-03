@@ -3,7 +3,20 @@ import type { Project } from '#/content/types'
 import { ArrowUpRight } from './Icons'
 import { TagChip } from './Section'
 
-function ProjectVisual({ title }: { title: string }) {
+function ProjectVisual({ title, image }: Pick<Project, 'title' | 'image'>) {
+  if (image) {
+    return (
+      <img
+        src={image.src}
+        alt={image.alt}
+        width={2000}
+        height={1040}
+        loading="lazy"
+        decoding="async"
+        className="aspect-[2/1.04] w-full rounded-lg border border-line object-cover object-top"
+      />
+    )
+  }
   return (
     <div
       role="img"
@@ -56,7 +69,7 @@ function FeaturedProject({ project, flip }: { project: Project; flip: boolean })
             : 'md:col-span-7 md:col-start-1 md:row-start-1'
         }
       >
-        <ProjectVisual title={project.title} />
+        <ProjectVisual title={project.title} image={project.image} />
       </div>
       <div
         className={`relative z-10 rounded-lg border border-line bg-surface p-6 md:row-start-1 md:col-span-6 md:shadow-xl md:shadow-black/10 ${

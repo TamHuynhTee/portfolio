@@ -9,7 +9,6 @@ export type Profile = {
   email: string
   github: string
   linkedin: string
-  resume: string
   about: string[]
   education: { school: string; degree: string; years: string }
   languages: { name: string; level: string }[]
@@ -41,6 +40,7 @@ export type Project = {
   featured: boolean
   stack: string[]
   built: string[]
+  image?: { src: string; alt: string }
   links: { label: string; href: string }[]
 }
 

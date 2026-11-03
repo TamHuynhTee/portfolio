@@ -14,7 +14,6 @@ export const profile = {
   email: 'huynhthanhtam2605@gmail.com',
   github: 'https://github.com/TamHuynhTee',
   linkedin: 'https://www.linkedin.com/in/thanh-tam-huynh-bbbb6a179/',
-  resume: '/resume.pdf',
   about: [
     'I am a frontend engineer who enjoys solving problems, polishing details and exploring ideas that make products easier to use. Most of my work is in React and Next.js, in teams of four to six.',
     'Over the last two years I have also worked on the backend side: Node.js services, Prisma and Postgres, AWS Lambda and API Gateway, and an analytics data pipeline. I am looking for a team where I can keep growing and move gradually toward full-stack work.',

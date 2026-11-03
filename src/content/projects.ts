@@ -1,6 +1,6 @@
 import type { Project } from './types'
 
-// Links are intentionally empty until real URLs are provided.
+// Projects without an image fall back to a placeholder; links stay empty until URLs exist.
 export const projects: Project[] = [
   {
     slug: 'formo',
@@ -19,7 +19,8 @@ export const projects: Project[] = [
       'SDK that collects web2 and web3 events',
       'AWS API Gateway and Lambda integrations',
     ],
-    links: [],
+    image: { src: '/projects/formo.webp', alt: 'Formo analytics dashboard with a wallet profile card' },
+    links: [{ label: 'formo.so', href: 'https://formo.so' }],
   },
   {
     slug: 'tous-les-jours',
@@ -37,7 +38,10 @@ export const projects: Project[] = [
       'Backend services and database integration',
       'Refresh-token authentication and third-party integrations',
     ],
-    links: [],
+    image: { src: '/projects/tous-les-jours.webp', alt: 'Tous les Jours app home screen shown on a phone' },
+    links: [
+      { label: 'tljvh.com/app/download', href: 'https://tljvh.com/app/download' },
+    ],
   },
   {
     slug: 'winemart',
@@ -55,7 +59,8 @@ export const projects: Project[] = [
       'CRM system built from scratch',
       'SEO fixes, optimization and refactoring',
     ],
-    links: [],
+    image: { src: '/projects/winemart.webp', alt: 'Winemart homepage hero with wine categories and store pickup' },
+    links: [{ label: 'winemart.vn', href: 'https://winemart.vn' }],
   },
   {
     slug: 'snowturns',

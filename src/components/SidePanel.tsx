@@ -65,14 +65,6 @@ export function SidePanel() {
           >
             Email me
           </a>
-          <a
-            href={profile.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-md border border-line px-4 py-2.5 text-sm font-medium text-fg transition-colors hover:border-accent"
-          >
-            Resume
-          </a>
         </div>
 
         <nav aria-label="Sections" className="mt-4 hidden lg:block">

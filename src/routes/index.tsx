@@ -92,14 +92,6 @@ function Home() {
             >
               {profile.email}
             </a>
-            <a
-              href={profile.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-md border border-line px-5 py-3 text-sm font-medium text-fg transition-colors hover:border-accent"
-            >
-              View resume
-            </a>
           </div>
         </Section>
 
